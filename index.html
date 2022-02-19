@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header id="header">
+            <div class="logo">
+                <img src="img/logo.svg" alt="logo" >
+            </div>
+            <div class="info">
+                <img src="img/person.svg" alt="" class="person">
+                <img src="img/heart.svg" alt="" class="like">
+                <img src="img/shop.svg" alt="" class="shop">
+                <img src="img/menu.svg" alt="" class="menu" onclick="menu(this)">
+                <div class="menu-nav">
+                    <nav>
+                        <li><a>постельное белье</a></li>
+                        <li><a>одежда для дома</a></li>
+                        <li><a>Одежда для улицы</a></li>
+                        <li><a>Выход</a></li>
+                    </nav>
+                    <img src="img/x.svg" class="close" onclick="close(this)">
+                </div>
+            </div>
+        </header>
+        <div class="main">
+            <main id="main">
+                <section class="block-img">
+                    <img src="img/baby1.svg" class="one-img">
+                    <img src="img/baby2.svg" class="two-img">
+                    <img src="img/baby3.svg" class="three-img">
+                    <img src="img/baby4.svg" class="four-img">
+                    <img src="img/baby5.svg" class="five-img">
+                </section>
+            </main>
+            <div class="description">
+                <section class="two-block">
+                    <h2>Пижама для девочек</h2>
+                    <span>Арт. 02765/46</span>
+                    <div class="feedback">
+                        <p class="p">Отзывы</p>
+                        <img src="img/start.svg"/>
+                        <img src="img/start.svg"/>
+                        <img src="img/start.svg"/>
+                        <img src="img/start.svg"/>
+                        <img src="img/start2.svg"/>
+                        <p class="p1">14 отзывов</p>
+                        <img src="img/next.svg"/>
+                    </div>
+                    <div class="price">
+                        <h2>800 ₽</h2>
+                        <s>1 500 ₽</s>
+                        <img src="img/next.svg"/>
+                    </div>
+                    <div class="btn-wrapper">
+                        <button class="one">скидка -36%</button>
+                        <button class="two">акция -20%</button>
+                    </div>
+                        <button class="btn-size">Выбрать размер <img src="img/bottom.svg" alt=""></button>
+                    <u>Определить размер</u>
+                    <div class="add-btn1">
+                        <div class="current">
+                            <button class="plus" id="plusBtn">+</button>
+                            <input type="number" value="1" id="number">
+                            <button class="minus" id="minusBtn">-</button>
+                        </div>
+                        <div class="add-btn">
+                            <button class="add" onclick="addBtn(this)">Добавить в корзину</button>
+                            <div class="products" onclick="closeBtn(this)"></div>
+                            <button class="heart" onclick="likeBtn(this)"><img src="img/h.svg" alt="" class="fav"></button>
+                        </div>
+                    </div>
+                    <u class="u">Купить в 1 клик</u>
+                </section>
+                <hr>
+                <section class="three-block">
+                    <div class="text">
+                        <img src="img/icon1.svg">
+                        <u>Описание товара</u>
+                    </div>
+                    <div class="textt">
+                        <img src="img/icon2.svg">
+                        <u>Доставка и возврат</u>
+                    </div>
+                    <div class="texttt">
+                        <img src="img/icon3.svg">
+                        <u class="u">Способы оплаты</u>
+                    </div>
+            </div>
+        </div>
+            <u class="center">Посмотреть все стили</u>
+        </section>
+            <section class="four-block">
+                <div class="baby-one">
+                </div>
+              <div class="box-img">
+                <div class="wrapper-baby">
+                    <div class="baby-girl"></div>
+                    <div class="bear"></div>
+                </div>
+                <div class="wrapper-baby1">
+                    <div class="baby-play">
+                        <div class="baby-pl">
+                            <img src="img/copy.svg" class="copy">
+                            <div class="div">
+                                <img src="img/bag.svg" alt="">
+                                <p>Узнай, что на мне</p>
+                                <img src="img/like.svg" alt="" srcset="">
+                            </div>
+
+                            
+                        </div>
+                    </div>
+                    <div class="play-baby"></div>
+                </div>
+            </div>
+            </section>
+        <footer>
+            <div class="wr-footer">
+                <div class="buyer">
+                    <p class="h3">покупателям</p>
+                    <p>Каталог</p>
+                    <p>Акции</p>
+                    <p>Бренды</p>
+                </div>
+                <div class="us">
+                    <p class="h3">о нас</p>
+                    <p>О компании</p>
+                    <p>Новости</p>
+                    <p>Команда</p>
+                </div>
+            </div>
+            <div class="wr-footer2">
+                <div class="wr-text">
+                    <p class="news">
+                        Узнайте первыми о<br/> новинках и акциях
+                    </p>
+                    <div class="inp">
+                        <input placeholder="Адрес электронной почты" class="adress" id="email" pattern="hhh">
+                        <img src="img/x.svg"/>
+                    </div>
+                </div>
+                <button class="btn-sub">
+                    Подписаться
+                </button>
+            </div>
+        </footer>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
